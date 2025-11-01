@@ -89,3 +89,68 @@ logs/*
 cache/
 misc/*
 data/*
+
+# ===== Downstream override (GraspGen_ros2): track upstream-ignored directories =====
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# 3) Append an override block so those dirs are trackedd
+# 3) Append an override block so those dirs are trackedd**
+# ================================================================================
