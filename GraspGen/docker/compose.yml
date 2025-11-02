@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  graspgen:
+    build:
+      context: .                                    # build context = repo root
+      dockerfile: Dockerfile
+    image: graspgen:latest
+    container_name: graspgen_ros2
+    network_mode: host                              # DDS discovery with your sim
+    gpus: all
+    ipc: host
+    shm_size: "2g"
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      - ROS_DISTRO=humble
+      - ROS_DOMAIN_ID=0                             # <-- match your sim
+      - RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+      - ROS_LOCALHOST_ONLY=0
+      # Optional defaults you might use later:
+      # - MODELS_DIR=/models
+      # - GRIPPER_CONFIG=/models/checkpoints/graspgen_robotiq_2f_140.yml
+      # - POINTCLOUD_TOPIC=/wrist_mounted_camera/points
+      # - CAMERA_FRAME=wrist_mounted_camera
+      # - BASE_FRAME=base_link
+    # Dockerfile keeps ENTRYPOINT [/ros_entrypoint.sh], which sources ROS.
+    volumes:
+      # Mount the entire repo into the path you used in the Dockerfile layout
+      - /home/iki/kortex_sim/src/GraspGen_ros2:/ros2_ws/src/GraspGen_ros2
+    command:
+    - bash
+    - -lc
+    - |
+      cd /ros2_ws/src/GraspGen_ros2/GraspGen \
+      && pip install -e . \
+      && tail -f /dev/null
+

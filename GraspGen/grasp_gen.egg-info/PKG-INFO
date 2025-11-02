@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: grasp_gen
+Version: 1.0.0
+Summary: GraspGen
+Home-page: 
+Author: 
+Author-email: 
+License: UNKNOWN
+Keywords: robotics manipulation learning computer-vision
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE
+License-File: LICENSE_ASSETS.md
+Requires-Dist: pickle5
+Requires-Dist: h5py
+Requires-Dist: hydra-core
+Requires-Dist: matplotlib
+Requires-Dist: meshcat
+Requires-Dist: numpy==1.26.4
+Requires-Dist: webdataset
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: tensorboard
+Requires-Dist: trimesh==4.5.3
+Requires-Dist: transformers
+Requires-Dist: tensordict
+Requires-Dist: diffusers==0.11.1
+Requires-Dist: timm==1.0.15
+Requires-Dist: huggingface-hub==0.25.2
+Requires-Dist: PyOpenGL==3.1.5
+Requires-Dist: addict
+Requires-Dist: spconv-cu120
+Requires-Dist: yapf==0.40.1
+Requires-Dist: tensorboardx
+Requires-Dist: sharedarray
+Requires-Dist: torch-geometric
+Requires-Dist: yourdfpy==0.0.56
+Dynamic: classifier
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+UNKNOWN
