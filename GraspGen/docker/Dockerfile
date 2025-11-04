@@ -93,12 +93,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python3-argcomplete \
  && rm -rf /var/lib/apt/lists/*
 
+RUN source /opt/ros/humble/setup.bash
 ENV ROS_DISTRO=humble
 ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 # Helpful defaults (you can override at run time)
 ENV ROS_DOMAIN_ID=0
 ENV ROS_LOCALHOST_ONLY=0
 
+WORKDIR /ros2_ws/src/GraspGen_ros2/GraspGen
+RUN pip install -e .
 # A tiny entrypoint that sources ROS env for interactive shells
 COPY docker/ros_entrypoint.sh /ros_entrypoint.sh
 RUN chmod +x /ros_entrypoint.sh

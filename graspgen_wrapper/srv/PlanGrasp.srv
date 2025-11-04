@@ -1,0 +1,14 @@
+# Request
+int32  topk                  # how many grasps to return (e.g., 10)
+float32 threshold            # score threshold (-1 to disable, or 0.8 typical)
+bool   filter_collisions     # run collision filter against full scene
+float32 collision_threshold  # meters; 0.02 = 2 cm
+bool   do_clustering         # (optional) simple clustering of object cloud
+
+---
+# Response
+bool success
+string message
+geometry_msgs/PoseStamped[] grasps_cam   # camera-frame poses
+geometry_msgs/PoseStamped[] grasps_base  # base-frame poses (TF transformed)
+float32[] scores
